@@ -1,0 +1,17 @@
+<app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="over">
+    <mat-list role="list">
+      <a routerLink="/portfolio/home" class="bb" mat-list-item routerLinkActive="active-link">Home</a>
+      <a routerLink="/portfolio/about" mat-list-item routerLinkActive="active-link">About</a>
+      <a routerLink="/portfolio/projects" mat-list-item routerLinkActive="active-link">Projects</a>
+      <a routerLink="/portfolio/hobbies" mat-list-item routerLinkActive="active-link">Hobbies</a>
+      <a routerLink="/portfolio/contact" mat-list-item routerLinkActive="active-link">Contacts</a>
+    </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+      <app-portfolio></app-portfolio>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+

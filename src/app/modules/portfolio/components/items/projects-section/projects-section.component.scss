@@ -1,0 +1,43 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+.container{
+  .row{
+    h1{
+      color: $primary-color;
+      font-weight: 900
+    }
+    .project-outer {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 10px;
+      border: none;
+
+      .example-card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+
+        .mat-card-title, .mat-card-subtitle, .mat-card-content{
+          font-weight: 900;
+        }
+
+
+        button{
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}

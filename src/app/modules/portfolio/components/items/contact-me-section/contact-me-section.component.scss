@@ -1,0 +1,49 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+$primary-transparent-color: rgba(255, 165, 2, 0.6);
+
+.contact-left {
+  padding: 50px 10px;
+  h2{
+    color: $primary-color;
+    font-weight: 900;
+  }
+  .contact-details {
+    .mobile, .email, .address {
+      .mat-icon{
+        color: $primary-color;
+      }
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+  }
+}
+
+.contact-right{
+  padding: 50px 30px;
+  background-color: $secondary-color;
+  border-radius: 10px;
+  h2{
+    color: $primary-color;
+    font-weight: 900;
+  }
+  :host ::ng-deep .mat-form-field {
+    color:green!important;
+  }
+  .send-message-btn{
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
+}
+
+@media (max-width: 998px) {
+  .contact-right{
+    border-radius: 0;
+  }
+}

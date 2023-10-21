@@ -1,0 +1,85 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+
+.container {
+  .row {
+  padding: 20px;
+    .about-right {
+      color: $secondary-color;
+      height: 100%;
+      padding: 150px 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      h1.title {
+        color: $primary-color;
+        font-weight: 700;
+      }
+
+      p.my-self {
+        text-align: justify;
+      }
+
+      .social-profiles {
+        a{
+          text-decoration: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+
+        .fa-brands {
+          width: 40px;
+          height: 40px;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 20px;
+
+          &:hover {
+            background-color: $primary-hover-color;
+            color: $primary-color;
+            cursor: pointer;
+            border: 1px solid $primary-hover-color;
+          }
+        }
+      }
+    }
+  }
+
+}
+@media (max-width: 576px) {
+
+  .about-right {
+    h1.title {
+      width: 100%;
+      text-align: center !important;
+    }
+
+    h3.my-jobs {
+      width: 100%;
+      text-align: center !important;
+    }
+
+    p.my-self {
+      text-align: justify !important;
+    }
+
+    .social-profiles{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+  }
+}

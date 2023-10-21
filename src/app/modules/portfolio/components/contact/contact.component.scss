@@ -1,0 +1,131 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+$primary-transparent-color: rgba(255, 165, 2, 0.6);
+.contact-outer {
+  background-color: #FFFFFF;
+
+  .contact-inner {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/contact.jpg");
+    background-position: center;
+    background-size: cover;
+
+    h1 {
+      color: $primary-color;
+      font-weight: 900;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+
+    }
+
+  }
+
+  .contact-details-outer {
+    padding: 50px 0;
+    background-color: $app-color;
+
+
+    h1.title {
+      color: $primary-color;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .contact-items {
+      height: auto;
+      background-color: $app-color;
+
+      .contact-item-inner {
+        background-color: #FFFFFF;
+        color: $secondary-color;
+        height: 250px !important;
+        border-top: 10px solid $primary-color;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin: 5px 0;
+        padding: 20px;
+
+        .mat-icon {
+          width: 100%;
+          height: 50%;
+          color: $secondary-color;
+          font-size: 50px;
+          text-align: left;
+        }
+
+        .mobile, .email, .address {
+          color: $secondary-color;
+          text-transform: capitalize;
+          font-weight: 500;
+          text-align: left;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          flex-direction: column;
+
+          span{
+            font-weight: 900;
+          }
+
+          button{
+            color: $secondary-color;
+            background-color: $primary-transparent-color;
+          }
+        }
+
+        .mobile{
+          .whatsapp{
+            color: rgb(46, 213, 115);
+          }
+          .telegram{
+            color: rgb(30, 144, 255);
+          }
+          .viber{
+            color: rgb(83, 82, 237);
+          }
+        }
+        .email{
+          .mail{
+            color: rgb(255, 71, 87);
+          }
+        }
+        .address{
+          .location{
+            color: rgb(255, 99, 72);
+          }
+        }
+
+      }
+    }
+  }
+
+
+  .map-area {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+
+    .map-area-inner {
+      width: 100%;
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: $secondary-color;
+      font-weight: 500;
+
+
+    }
+  }
+}

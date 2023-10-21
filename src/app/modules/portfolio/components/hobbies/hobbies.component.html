@@ -1,0 +1,33 @@
+<div class="hobby-outer">
+  <div class="hobby-inner">
+    <div class="hobby-landing">
+      <h1 class="text-center">My Hobbies</h1>
+    </div>
+  </div>
+
+  <div class="hobby-icon-outer ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="title">My Hobbies</h1>
+        </div>
+      </div>
+    </div>
+    <div class="hobby-icon-inner">
+      <div class="col-12 py-5">
+        <div class="hobby-carousel">
+          <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let icon of hobbies">
+              <ng-template carouselSlide>
+                <div class="carousel-content">
+                  <i [class]="icon.iconClass" class="icon"></i>
+                  <p class="hobby-name">{{icon.hobbyName}}</p>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

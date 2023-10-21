@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+$primary-color:#ffa502;
+$secondary-color:#2f3542;
+$app-color:#f1f2f6;
+$app-font:Rubik, sans-serif;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, sans-serif; }
+.section-divider{
+  width: 100%;
+  height: 100px;
+}
+
+
+
+
+
+

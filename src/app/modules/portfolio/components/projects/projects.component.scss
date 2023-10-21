@@ -1,0 +1,41 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+$primary-transparent-color: rgba(255, 165, 2, 0.6);
+.projects-outer{
+  width: 100%;
+  height: auto;
+  .projects-inner{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/projects.jpg");
+    background-position: center;
+    background-size: cover;
+    .projects-landing{
+      h1{
+        color: $primary-color;
+        font-weight: 900;
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 7px;
+        line-height: 50px;
+      }
+    }
+
+
+  }
+  .project-item-outer{
+    padding: 100px 0;
+    background-color: $app-color;
+
+    h1{
+      color: $primary-color;
+      font-weight: 900
+    }
+  }
+}

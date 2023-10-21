@@ -1,0 +1,21 @@
+<mat-toolbar>
+  <div class="container">
+    <div class="row">
+      <div class="menu-icon-items col-12 col-lg-6 col-md-6 d-flex align-items-center justify-content-start">
+        <span routerLink="portfolio/landing">
+          <img src="assets/images/my-logo.png" alt="Logo" width="50" matTooltipClass="tool-tip-style" matTooltip="Tasheela Jayawickrama">
+        </span>
+        <button class="menu-button" mat-icon-button (click)="toggleMenu()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div class="header-nav-items col-12 col-lg-6 col-md-6 d-flex align-items-center justify-content-end animate__animated" *ngIf="isNavVisible" [ngClass]="{'animate__fadeInDown': isNavVisible, 'animate__fadeInUp': !isNavVisible}">
+        <button mat-button routerLinkActive="active-link" routerLink="portfolio/landing" matTooltipClass="tool-tip-style" matTooltip="Home">Home</button>
+        <button mat-button routerLinkActive="active-link" routerLink="portfolio/about" matTooltipClass="tool-tip-style" matTooltip="About">About</button>
+        <button mat-button routerLinkActive="active-link" routerLink="portfolio/projects" matTooltipClass="tool-tip-style" matTooltip="Projects">Projects</button>
+        <button mat-button routerLinkActive="active-link" routerLink="portfolio/hobbies" matTooltipClass="tool-tip-style" matTooltip="Hobbies">Hobbies</button>
+        <button mat-button routerLinkActive="active-link" routerLink="portfolio/contact" matTooltipClass="tool-tip-style" matTooltip="Contacts">Contacts</button>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

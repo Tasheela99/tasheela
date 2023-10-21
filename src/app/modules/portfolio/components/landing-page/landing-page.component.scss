@@ -1,0 +1,330 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+$primary-transparent-color: rgba(255, 165, 2, 0.6);
+
+
+.landing-page-outer {
+  font-family: $app-font;
+  width: 100%;
+  height: auto;
+  background-color: $app-color;
+
+  .landing-page-inner {
+    width: 100%;
+    height: 100%;
+
+
+    .landing-section {
+      width: 100%;
+      height: auto;
+      padding: 50px 0 0 0 ;
+
+
+      .left {
+        color: $secondary-color;
+        height: auto;
+
+
+        .inner-item {
+          display: flex;
+          align-items: self-start;
+          justify-content: center;
+          flex-direction: column;
+          height: 100%;
+          gap: 15px;
+
+          h1.greeting {
+            color: $primary-color;
+            font-weight: 700;
+            font-family: Rubik, sans-serif;
+
+          }
+
+          .name {
+            font-size: 50px;
+            font-weight: 900;
+            font-family: Rubik, sans-serif;
+            line-height: 50px;
+
+            .large-text {
+              color: $primary-color;
+              font-size: 70px;
+            }
+          }
+
+          .position {
+            font-size: 30px;
+          }
+
+          .description {
+            text-align: justify;
+          }
+
+          .button-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .contact-btn {
+              background-color: $primary-color;
+              color: $app-color;
+            }
+
+            .download-btn {
+              background-color: transparent;
+              color: $primary-color;
+              border: 1px solid $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .about-section{
+      background-color: #FFFFFF;
+    }
+
+
+    .service-section {
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 0;
+
+      h1.title {
+        color: $primary-color;
+        font-weight: 700;
+        font-family: Rubik, sans-serif;
+        margin: 0;
+      }
+
+      .service-item-outer {
+        height: 400px;
+        padding: 20px;
+
+        .item {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          border: 2px solid $primary-hover-color;
+          border-radius: 10px;
+          padding: 10px;
+          gap: 10px;
+
+          .item-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .fa-brands, .fa-solid {
+              font-size: 40px;
+              color: $primary-color;
+            }
+          }
+
+          .item-name {
+            color: $secondary-color;
+            margin: 0;
+            font-weight: 700;
+          }
+
+          .item-description {
+            text-align: center;
+            color: $secondary-color;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .image-bar-outer{
+      width: 100%;
+      height: auto;
+      .image-bar-inner{
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url('/assets/images/hire-me.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1.title{
+          color: $app-color!important;
+          text-transform: capitalize;
+          font-weight: 700;
+        }
+
+        button{
+          background-color: $app-color;
+          color: $primary-color;
+        }
+
+      }
+    }
+
+    .skills-section {
+      background-color: white;
+      color: $secondary-color;
+      padding: 100px 0;
+      height: auto;
+
+      .skills-left {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+
+      h1.title {
+        color: $primary-color;
+        font-weight: 700;
+        font-family: Rubik, sans-serif;
+        margin: 0;
+        text-align: left;
+      }
+
+      .hire-me-btn {
+        background-color: $primary-color;
+      }
+
+      .carousel-content {
+        text-align: center;
+      }
+
+      .icon {
+        font-size: 100px;
+        color: $secondary-color;
+      }
+
+    }
+
+    .projects-section {
+      padding: 100px 0;
+    }
+
+    .contact-section {
+      background-color: #FFFFFF;
+      color: #2f3542;
+      padding: 100px 0;
+
+      h1.title {
+        color: $primary-color;
+        font-weight: 700;
+        font-family: Rubik, sans-serif;
+        margin: 0;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .contact-left {
+        padding: 50px 10px;
+        h2{
+          color: $primary-color;
+          font-weight: 900;
+        }
+        .contact-details {
+          .mobile, .email, .address {
+            .mat-icon{
+              color: $primary-color;
+            }
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+          }
+        }
+      }
+
+      .contact-right{
+        padding: 50px 30px;
+        background-color: $secondary-color;
+        border-radius: 10px;
+        h2{
+          color: $primary-color;
+          font-weight: 900;
+        }
+        :host ::ng-deep .mat-form-field {
+          color:green!important;
+        }
+        .send-message-btn{
+          color: $secondary-color;
+          background-color: $primary-color;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 576px) {
+
+    .greeting {
+      width: 100%;
+      font-size: 20px !important;
+      text-align: center !important;
+    }
+
+    .large-text {
+      font-size: 50px !important;
+    }
+    .name {
+      text-align: center;
+      font-size: 40px !important;
+    }
+
+    .button-area {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .download-btn, .contact-btn {
+        width: 100% !important;
+      }
+
+    }
+
+    .about-section {
+      padding: 10px;
+
+    }
+
+
+    .contact-right{
+      border-radius: 0!important;
+
+    }
+  }
+
+  @media (max-width: 998px) {
+    .left{
+      padding: 100px 20px;
+    }
+    .right{
+      .my-image{
+        display: none;
+      }
+    }
+  }
+}
+
+

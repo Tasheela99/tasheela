@@ -1,0 +1,40 @@
+$primary-color: #ffa502;
+$secondary-color: #2f3542;
+$primary-hover-color: #eccc68;
+$app-color: #f1f2f6;
+$app-font: Rubik, sans-serif;
+$primary-transparent-color: rgba(255, 165, 2, 0.6);
+.footer-outer{
+  padding: 10px 0;
+  background-color: $secondary-color;
+  color: $app-color;
+
+
+  .social-profiles{
+    a{
+      text-decoration: none;
+      color: $app-color;
+      i{
+        width: 40px;
+        height: 40px;
+        border: 2px solid $app-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-item-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

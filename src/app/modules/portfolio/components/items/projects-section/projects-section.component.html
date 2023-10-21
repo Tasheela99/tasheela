@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <h1 class="title text-center">My Projects</h1>
+    <div class="col-12 col-lg-4 col-md-6 project-outer" *ngFor="let project of projects ">
+      <mat-card class="example-card" [ngStyle]="{'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url(' + project.imageLink + ')'}">
+        <mat-card-header>
+          <mat-card-title class="mat-card-title">{{project.projectName}}</mat-card-title>
+          <mat-card-subtitle class="mat-card-subtitle">{{project.technologies}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="mat-card-content">{{project.description}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a href="{{project.gitLink}}" target="blank"><button mat-stroked-button>See More</button></a>
+        </mat-card-actions>
+      </mat-card>
+
+    </div>
+
+  </div>
+</div>
